@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", function() {
-    var ctx = document.getElementById("waveChart").getContext("2d");
+    var ctx = document.getElementById("wavyLines").getContext("2d");
 
     var data = {
     labels: ["30.05", "31.05", "01.06", "02.06", "03.06", "04.06", "05.06", "07.06", "08.06", "09.06"],
@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
         backgroundColor: "rgba(54, 162, 235, 0.5)",
         borderColor: "rgba(54, 162, 235, 1)",
         borderWidth: 1,
-        fill: true
+        fill: true,
+        tension: 0.4
         },
         {
         label: "Волна 2",
@@ -19,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
         backgroundColor: "rgba(255, 99, 132, 0.5)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 1,
-        fill: true
+        fill: true,
+        tension: 0.4
         }
     ]
     };

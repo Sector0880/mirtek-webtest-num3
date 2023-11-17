@@ -147,8 +147,8 @@ main hr {
 .main-header {
     color: #37474f;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 55px;
     user-select: none;
 }
@@ -179,4 +179,60 @@ main hr {
     width: 100%;
     height: 290px;
     border: 1px solid red;
+}
+
+.work-statistic {
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.work-statistic-block1 {
+    width: 29%;
+}
+.work-statistic-block1 div {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 43px;
+    align-items: center;
+}
+.work-statistic-block1-from1 {
+    height: 34%;
+    border-bottom: 1px solid #ebedef;
+}
+.work-statistic-block1-from2 {
+    height: 33%;
+    border-bottom: 1px solid #ebedef;
+}
+.work-statistic-block1-from3 {
+    height: 33%;
+}
+.from {
+    text-align: center;
+}
+.from h3 {color: #37474f;}
+.from p {color: #78909c;}
+
+
+.work-statistic-block2 {
+    background-color: white;
+    width: 68%;
+}
+
+.main-header-timeline {
+    background-color: #cfd8dc;
+    border-radius: 100px;
+    padding: 10px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.main-header-timeline-box {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
 }
