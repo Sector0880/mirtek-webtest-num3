@@ -24,37 +24,61 @@
                     <div class="push-circle">8</div>
                 </div>    
                 <img id="acc-box-line" src="img/icons/Shape 1.png" alt="">
-                <p>Filip J.</p>
+                <p style="cursor: pointer;">Filip J.</p>
                 <img id="acc-box-down" src="img/icons/Down 2.png" alt="">
                 <p id="acc-box-acc-avatar">F</p>
             </div>
         </div>
     </header>
-    <div class="sidebar">
-        <a style="background-color: #df468e;" href="">
-            <img src="img/icons/home.png" alt="">
-            <p style="color: white;">Home</p>
-        </a>
-        <a href="">
-            <img src="img/icons/Clock.png" alt="">
-            <p>Time management</p>
-        </a>
-        <a href="">
-            <img src="img/icons/Box.png" alt="">
-            <p>Inbox</p>
-        </a>
-        <a href="">
-            <img src="img/icons/Calendar.png" alt="">
-            <p>Calendar</p>
-        </a>
-        <a href="">
-            <img src="img/icons/analystics.png" alt="">
-            <p>Analytics</p>
-        </a>
-        <a href="">
-            <img src="img/icons/Cogwheel.png" alt="">
-            <p>Settings</p>
-        </a>
+    <div class="main-box">
+        <div class="sidebar">
+            <a style="background-color: #df468e;" href="">
+                <img src="img/icons/home.png" alt="">
+                <p style="color: white;">Home</p>
+            </a>
+            <a href="">
+                <img src="img/icons/Clock.png" alt="">
+                <p>Time management</p>
+            </a>
+            <a href="">
+                <img src="img/icons/Box.png" alt="">
+                <p>Inbox</p>
+            </a>
+            <a href="">
+                <img src="img/icons/Calendar.png" alt="">
+                <p>Calendar</p>
+            </a>
+            <a href="">
+                <img src="img/icons/analystics.png" alt="">
+                <p>Analytics</p>
+            </a>
+            <a href="">
+                <img src="img/icons/Cogwheel.png" alt="">
+                <p>Settings</p>
+            </a>
+        </div>    
+        <main>
+            <div class="main-header">
+                <h2>Hi, Filip,</h2>
+                <p>Checkout your latest projects and their progress.</p>
+            </div>
+            <hr>
+            <div class="work-progress">
+                <div class="work-progress-header">
+                    <div id="work-progress-header-info">
+                        <h2>Wavy Lines</h2>
+                        <p>Working Hours</p>    
+                    </div>
+                    <div id="work-progress-header-week">
+                        <p>THIS WEEK</p>
+                        <img id="acc-box-down" src="img/icons/Down 2.png" alt="">
+                    </div>
+                </div>
+                <canvas id="myChart"></canvas>
+            </div>
+        </main>
     </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
