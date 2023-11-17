@@ -41,3 +41,43 @@ document.addEventListener("DOMContentLoaded", function() {
     options: options
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var ctx = document.getElementById("DailyProgress").getContext("2d");
+
+    var data = {
+    labels: ["30.05", "31.05", "01.06", "02.06", "03.06", "04.06", "05.06"],
+    datasets: [
+        {
+        label: "Значения",
+        data: [45, 60, 35, 50, 65, 40, 55],
+        backgroundColor: createGradient(ctx, "#8B00FF", "#FF00FF"),
+        borderColor: "yellow",
+        borderWidth: 2,
+        type: "bar"
+        }
+    ]
+    };
+
+    var options = {
+    scales: {
+        y: {
+        beginAtZero: true,
+        max: 70
+        }
+    }
+    };
+
+    var barChart = new Chart(ctx, {
+    type: "bar",
+    data: data,
+    options: options
+    });
+});
+
+function createGradient(ctx, color1, color2) {
+    var gradient = ctx.createLinearGradient(0, 0, 0, 200);
+    gradient.addColorStop(0, color1);
+    return gradient;
+}
