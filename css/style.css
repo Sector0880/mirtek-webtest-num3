@@ -49,11 +49,11 @@ header {
     align-items: center;
 }
 .search img {
-    margin-right: 15px;
     user-select: none;
 }
 .search p {
     color: #a1b1c2;
+    padding: 0 16px;
     font-size: 14px;
 }
 

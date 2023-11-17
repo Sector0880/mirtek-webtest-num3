@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
         {
         label: "Волна 1",
         data: [12, 25, 40, 55, 42, 30, 18, 50, 38, 20],
-        backgroundColor: "rgba(54, 162, 235, 0.5)",
-        borderColor: "rgba(54, 162, 235, 1)",
+        backgroundColor: "rgba(233, 68, 141, 0.8)",
+        borderColor: "rgba(233, 68, 141, 1)",
         borderWidth: 1,
         fill: true,
         tension: 0.4
@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
         {
         label: "Волна 2",
         data: [30, 45, 20, 35, 50, 40, 28, 15, 32, 48],
-        backgroundColor: "rgba(255, 99, 132, 0.5)",
-        borderColor: "rgba(255, 99, 132, 1)",
+        backgroundColor: "rgba(215, 169, 223, 0.9)",
+        borderColor: "rgba(215, 169, 223, 1)",
         borderWidth: 1,
         fill: true,
         tension: 0.4
@@ -52,9 +52,8 @@ document.addEventListener("DOMContentLoaded", function() {
         {
         label: "Значения",
         data: [45, 60, 35, 50, 65, 40, 55],
-        backgroundColor: createGradient(ctx, "#8B00FF", "#FF00FF"),
-        borderColor: "yellow",
-        borderWidth: 2,
+        backgroundColor: createGradient(ctx, "#7f59c2", "#FF00FF"),
+        borderWidth: 0,
         type: "bar"
         }
     ]
