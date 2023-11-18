@@ -59,7 +59,7 @@ header {
 
 .sidebar {
     background-color: #37474f;
-    height: 2000px; 
+    height: 2800px; 
     user-select: none;
     min-width: 250px;
 }
@@ -138,7 +138,7 @@ header {
 }
 main {
     margin: 50px;
-    width: 1450px;
+    width: 1465px;
 }
 main hr {
     margin: 30px 0;
@@ -158,6 +158,7 @@ main hr {
     background-color: white;
     margin: 50px 0;
     height: 400px;
+    box-shadow: 4px 4px 7px 0px rgba(34, 60, 80, 0.04);
 }
 .work-progress-header {
     padding: 30px;
@@ -189,6 +190,7 @@ main hr {
 }
 .work-statistic-block1 {
     width: 29%;
+    box-shadow: 4px 4px 7px 0px rgba(34, 60, 80, 0.04);
 }
 .work-statistic-block1 div {
     background-color: white;
@@ -218,6 +220,7 @@ main hr {
 .work-statistic-block2 {
     background-color: white;
     width: 68%;
+    box-shadow: 4px 4px 7px 0px rgba(34, 60, 80, 0.04);
 }
 
 .main-header-timeline {
@@ -235,4 +238,90 @@ main hr {
     width: 200px;
     align-items: center;
     justify-content: space-between;
+}
+
+.current-progress {
+    margin: 50px 0;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.current-progress-box {
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.current-progress-box-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project-info {
+    display: flex;
+    align-items: center;
+}
+.project-info-text {
+    padding-left: 20px;
+}
+.project-info-text p {
+    color: #78909c;
+}
+.project-info-text, .project-lastup {
+    color: #37474f;
+}
+
+.current-progress-box {
+    box-shadow: 4px 4px 7px 0px rgba(34, 60, 80, 0.04);
+}
+.current-progress-box-project, .current-progress-box-statistic {
+    width: 50%;
+    margin: 0 30px;
+}
+.current-progress-box-statistic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.current-progress-box-statistic-time, .current-progress-box-statistic-message {
+    display: flex;
+    align-items: center;
+}
+.current-progress-box-statistic div p {
+    padding-left: 10px;
+    color: #37474f;
+}
+
+.current-progress-box-statistic-progressbar {
+    width: 300px;
+    margin-right: 120px;
+    margin-left: 60px;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 14px 14px 14px 14px;
+    overflow: hidden;
+}
+
+.progressbar-1, .progressbar-2, .progressbar-3, .progressbar-4 {
+    height: 100%;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+    border-radius: 14px 14px 14px 14px;
+}
+.progressbar-1 {background: linear-gradient(to right, #df468e, #d87ca7);}
+.progressbar-2 {background: linear-gradient(to right, #10c6ac, #7accc0);}
+.progressbar-3 {background: linear-gradient(to right, #3580ff, #88aff3);}
+.progressbar-4 {background: linear-gradient(to right, #aa00ff, #d27dfd);}
+
+.staff-info {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.staff-info-box1, .staff-info-box2, .staff-info-box3 {
+    background-color: white;
+    width: 32%;
+    box-shadow: 4px 4px 7px 0px rgba(34, 60, 80, 0.04);
 }

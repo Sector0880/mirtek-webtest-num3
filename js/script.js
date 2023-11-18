@@ -80,3 +80,37 @@ function createGradient(ctx, color1, color2) {
     gradient.addColorStop(0, color1);
     return gradient;
 }
+
+
+
+function setProgress1(progress) {
+    const progressBar = document.querySelector('.progressbar-1');
+    progressBar.style.width = progress + '%';
+}
+
+// Используйте функцию setProgress() для установки значения прогресса
+setProgress1(10);
+
+function setProgress2(progress) {
+    const progressBar = document.querySelector('.progressbar-2');
+    progressBar.style.width = progress + '%';
+}
+
+// Используйте функцию setProgress() для установки значения прогресса
+setProgress2(90);
+
+function setProgress3(progress) {
+    const progressBar = document.querySelector('.progressbar-3');
+    progressBar.style.width = progress + '%';
+}
+
+// Используйте функцию setProgress() для установки значения прогресса
+setProgress3(85);
+
+function setProgress4(progress) {
+    const progressBar = document.querySelector('.progressbar-4');
+    progressBar.style.width = progress + '%';
+}
+
+// Используйте функцию setProgress() для установки значения прогресса
+setProgress4(30);
