@@ -362,3 +362,78 @@ main hr {
 #ulli-box-li-span1 {background-color: #f50057;}
 #ulli-box-li-span2 {background-color: #ff4081;}
 #ulli-box-li-span3 {background-color: #ff80ab;}
+
+
+.box2-user-avatar {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    position: relative;
+}
+.box2-user-avatar span {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: #4bcf99;
+    border: 5px solid white;
+    bottom: 0;
+    left: 90px;
+}
+.staff-info-box2-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#box2-user-name {
+    padding-top: 15px;
+    color: #37474f;
+    font-size: 18px;
+}
+#box2-user-city {
+    color: #78909c;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 35px;
+}
+td {
+    padding: 30px;
+    border: 1px solid #f2f4f7;
+}
+.td-title {
+    color: #bdc8d3;
+    font-size: 12px;
+}
+.td-content {font-size: 18px;}
+.td-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40px;
+}
+#send-invoice {
+    padding-top: 20px;
+    text-decoration: underline;
+    color: #df468e;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+#export-pdf {
+    padding-top: 20px;
+    text-decoration: underline;
+    color: #a1b1c2;
+    padding-left: 30px;
+    cursor: pointer;
+}
+#totalOverduec-m {
+    text-align: center;
+    font-size: 28px;
+    color: #37474f;
+    padding-bottom: 50px;
+}

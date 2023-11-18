@@ -31,6 +31,14 @@ document.addEventListener("DOMContentLoaded", function() {
         y: {
         beginAtZero: true,
         max: 60
+        },
+        x: {
+            grid: {
+                display: true,
+                drawBorder: false,
+                drawOnChartArea: false,
+                drawTicks: false
+            }
         }
     }
     };
@@ -64,6 +72,14 @@ document.addEventListener("DOMContentLoaded", function() {
         y: {
         beginAtZero: true,
         max: 70
+        },
+        x: {
+            grid: {
+                display: true,
+                drawBorder: false,
+                drawOnChartArea: false,
+                drawTicks: false
+            }
         }
     }
     };
@@ -74,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
     options: options
     });
 });
+
 
 function createGradient(ctx, color1, color2) {
     var gradient = ctx.createLinearGradient(0, 0, 0, 200);
@@ -114,3 +131,46 @@ function setProgress4(progress) {
 
 // Используйте функцию setProgress() для установки значения прогресса
 setProgress4(30);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Получите ссылку на элемент canvas
+    const canvas = document.getElementById('totalOverduec');
+
+    // Создайте данные для графика
+    const data = {
+    labels: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+    datasets: [{
+        label: 'Пример данных',
+        data: [6, 10, 20, 20, 25, 24, 20],
+        fill: false,
+        borderColor: '#8966c7',
+        backgroundColor: '#8966c7'
+    }]
+    };
+
+    // Создайте экземпляр графика
+    const myChart = new Chart(canvas, {
+    type: 'line',
+    data: data,
+    options: {
+        responsive: true,
+        scales: {
+            y: {
+                max: 30,
+                grid: {
+                    display: true
+                }
+            },
+            x: {
+                grid: {
+                    display: true,
+                    drawBorder: false,
+                    drawOnChartArea: false,
+                    drawTicks: false
+                }
+            }
+          }
+    }
+    });
+});
